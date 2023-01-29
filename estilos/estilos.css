@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  hr{
+    color: #EA5554;
+    height: 3px !important;
+    margin: auto;
+    opacity: 1;
+  }
+  .contenedor{
+    margin: 0 3%;
+  }
+
+
+  .portada{
+    display: flex;
+    
+    margin-top: 75px;
+    height: 100vh;
+  }
+  .portada1{
+    color: #fff;
+    width: 50%;
+    background: url(../img/img-portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .portada2{
+    width: 50%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-size: 40px;
+    font-weight: 400;
+  }
+  h3{
+    font-size: 20px;
+  }
+
+  /* MENU  */
+  .navegador{
+    background: black;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
+  .menu{
+    position: relative;
+  }
+  .menu i{
+    padding: auto;
+  }
+  .menu-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  ul{
+    padding-left: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .menu-nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  .menu-nav li a:hover{
+    background: #fff;
+    color: black;
+  }
+  .menu-nav-item{
+    margin: 10px;
+    padding: 10px;
+  }
+  .menu-nav-item1{
+    display: none;
+  }
+  .menu-toggle,
+  .menu-close{
+    display: none;
+  }
+
+  @media (max-width: 992px){
+    .menu-nav li a{
+      font-size: 16px;
+    }
+    .menu-nav-item {
+      margin: 10px 5px;
+      padding: 5px;
+  }
+  }
+
+  @media (max-width: 768px){
+    .navegador{
+      display: flex;
+      align-items: center;
+      height: 48px;
+      justify-content: flex-end;
+      padding: 0 28px;
+      /* position: relative;  */
+    }
+    .menu-toggle{
+      display: inline;
+      color: #fff;
+      font-size: 24px;
+    }
+    .menu-close{
+      position: absolute;
+      right: 24px;
+      display: block;
+      color: #fff;
+      font-size: 24px;
+      border-radius: 50%;
+    }
+    .menu-toggle:hover{
+      color: rgb(171, 171, 171);
+    }
+    .menu-close:hover{
+      color: rgb(171, 171, 171);
+    }
+    .menu{
+      right: -110%;
+      background: #000000;
+      width: 70%;
+      height: 100vh;
+      padding: 24px 0;
+      z-index: 100;
+      transition: all 0.5s;
+      border-radius: 0 0 0 50%;
+      position: absolute;
+      top: 0;
+      overflow: scroll;
+    }
+    .menu-nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-nav-item1{
+      display: block;
+    }
+    .menu-nav-item{
+      margin:  0 ;
+    }
+    .show{
+      right: 0;
+    }
+  }
+
+  @media (max-width: 576px){
+    .menu-nav-item1{
+      font-size: 14px;
+    }
+    .menu-nav-item{
+      margin: 10px 0;
+    }
+    .menu-nav-item a{
+      font-size: 12px !important;
+    }
+  }
+
+
+
+/* FIN MENU  ---------------------------------------------------------------- */
+
+  .fecha{
+    border-radius: 15px;
+    padding: 20px 28px;
+    display: inline-block;
+    font: 18px/20px 'Montserrat',sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background: #3b323c;
+  }
+
+    /* SOBRE MI  */
+  
+  .datos{
+    padding-top: 75px;
+  }
+  .datos-img{
+    width: 70%;
+    border-radius: 50px;
+  }
+  .datos-hr{
+    color: #EA5554;
+    width: 75%;
+    height: 3px;
+    margin: auto;
+    opacity: 1;
+  }
+
+  /* CONOCIMIENTOS  */
+
+  .conocimientos{
+    padding-top: 75px;
+  }
+
+  /* EXPERIENCIAS  */
+
+  .experiencias{
+    padding-top: 35px;
+  }
+
+  /* EDUCACION  */
+  .educacion{
+    padding-top: 35px;
+  }
+  .educacion-titulo{
+    background-color: #EA5554;
+  }
+
+  /* PORFOLIO  */
+
+  .porfolio{
+    padding-top: 35px;
+  }
+
+  /* CONTACTO  */
+  .contacto{
+    background-color: #000000c6;
+    color: #fff;
+  }
+  input, textarea{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #EA5554;
+    background-color: #00000000;
+    color: #fff;
+  }
+  button{
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #EA5554;
+    background-color: #00000000;
+    color: #fff;
+  }
+
+  /* ICONOS REDES  */
+
+  .redes ul{
+    margin-bottom: 0;
+  }
+
+  i{
+    color: #fff;
+    font-size: 22PX;
+  }  
+  I:hover{
+    color: rgb(171, 171, 171);
+  }
+
+  
+  /* MEDIA@  */
+
+  @media (max-width: 992px){
+    h3{
+      font-size: 16px;
+    }
+    .portada{
+      margin-top: 0px;
+    }
+    .datos-img{
+      width: 100%;
+    }
+    .educacion-p{
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px){
+    h1{
+      font-size: 35px;
+    }
+  }
+
+  
+  
+  @media (max-width: 576px) {
+    h1{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 17px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .datos-titulo{
+      margin-bottom: 2px;
+    }
+    .datos-lista{
+      text-align: center;
+    }
+    .datos-img{
+      width: 80% !important;
+    }
+    .datos-texto{
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 13px;
+    }
+    .order-sm-first {
+      order: -1!important;
+    }
+    .mb-sm-5 {
+      margin-bottom: 3rem!important;
+    }
+    .fecha{
+      font-size: 16px;
+    }
+  }
+
+
+
+
+
