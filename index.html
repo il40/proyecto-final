@@ -21,7 +21,7 @@
     <!-- MENU  -->
         <div class="navegador">
             <div class="menu" id="navegador-menu">
-                <i class="bi bi-x-circle menu-close" id="close-menu"></i>
+                <i class="bi bi-x-circle menu-close" id="cerrar-menu"></i>
                 <ul class="menu-nav">
                     <li class="menu-nav-item1 mt-5">LUIS MORALES <br> FOTOGRAFO</li>
                     <li class="menu-nav-item mt-3"><a href="#inicio">Inicio</a></li>
@@ -30,10 +30,10 @@
                     <li class="menu-nav-item mt-3"><a href="#experiencia">Experiencia</a></li>
                     <li class="menu-nav-item mt-3"><a href="#educacion">Educacion</a></li>
                     <li class="menu-nav-item mt-3"><a href="#porfolio">Porfolio</a></li>
-                    <li class="menu-nav-item mt-3 mb-4"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-nav-item mt-3 item-contacto"><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
-            <i class="bi bi-list menu-toggle" id="toggle-menu"></i>
+            <i class="bi bi-list menu-toggle" id="abrir-menu"></i>
         </div>
     <!-- PORTADA  -->        
         <div class="portada">
@@ -196,26 +196,57 @@
             <div class="col-12 text-center my-5">
                 <h4>PORFOLIO</h4>
             </div>
-            <div class="lightbox">
+            <div id="div-porfolio" class="lightbox">
                 <div class="row">
-                  <div class="col-md-6">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/1.jpg" alt="">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/10.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/2.jpg" alt="">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/11.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/3.jpg" alt="">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/12.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/4.jpg" alt="">
-                    <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/9.jpg" alt="">
-                  </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/2.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/10.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/12.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/8.jpg" alt="">
+                    </div>
                 </div>
-              </div>
+                <div class="col-12 text-center my-5">
+                    <button id="btn-mas" class="btn-porfolio" type="button"><a href="#porfolio"><h4>VER PORFOLIO COMPLETO</h4></a></button>
+                </div>
+            </div>
+            <!-- PORFOLIO COMPLETO  -->
+            <div id="masPorfolio" class="lightbox porfolio2">
+                <div class="col-12 text-center my-5">
+                    <button id="btn-menos" class="btn-porfolio" type="button"><a href="#porfolio"><h4>VER MENOS</h4></a></button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/1.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/2.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/3.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/4.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/5.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/6.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/7.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/8.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/9.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/10.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/11.jpg" alt="">
+                        <img class="w-100 shadow-1-strong rounded p-4 p-lg-3 p-md-2 p-sm-4" src="img/porfolio/12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 text-center my-5">
+                    <button id="btn-menos2" class="btn-porfolio" type="button"><a href="#porfolio"><h4>VER MENOS</h4></a></button>
+                </div>
+            </div>
+            <!-- FIN PORFOLIO COMPLETO  -->
         </div>
         <hr>
         <!-- CONTACTO  -->
@@ -227,11 +258,14 @@
                 <div class="col-sm-8 col-md-6 text-center mb-sm-5">
                     <div>
                         <h5>Info de Contacto</h5>
+                        <i class="bi bi-envelope"></i>
                         <p>Email: fotografo@gmail.com</p>
+                        <i class="bi bi-telephone"></i>
                         <p>Telefono: +54 351-53226</p>
                     </div>
                     <div>
                         <h5>Direccion</h5>
+                        <i class="bi bi-geo-alt"></i>
                         <p>Av. Siempre Viva 742</p>
                     </div>
                 </div>

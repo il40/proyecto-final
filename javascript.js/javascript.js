@@ -1,12 +1,36 @@
 // MENU 
 const navegadorMenu = document.getElementById('navegador-menu');
-const toggleMenu = document.getElementById('toggle-menu');
-const closeMenu = document.getElementById('close-menu');
+const abrirMenu = document.getElementById('abrir-menu');
+const cerrarMenu = document.getElementById('cerrar-menu');
 
-toggleMenu.addEventListener('click', () =>{
-    navegadorMenu.classList.toggle('show');
+abrirMenu.addEventListener('click', () =>{
+    navegadorMenu.classList.toggle('verMenu');
 })
 
-closeMenu.addEventListener('click', () =>{
-    navegadorMenu.classList.remove('show');
+cerrarMenu.addEventListener('click', () =>{
+    navegadorMenu.classList.remove('verMenu');
+})
+
+
+
+// PORFOLIO 
+let masPorfolio = document.getElementById('masPorfolio');
+let divPorfolio = document.getElementById('div-porfolio');
+let botonMas = document.getElementById('btn-mas');
+let botonMenos = document.getElementById('btn-menos');
+let botonMenos2 = document.getElementById('btn-menos2');
+
+botonMas.addEventListener('click', () =>{
+    masPorfolio.classList.toggle('mostrarPorfolio');
+    divPorfolio.classList.toggle('btn-ocultar');
+})
+
+botonMenos.addEventListener('click', () =>{
+    masPorfolio.classList.remove('mostrarPorfolio');
+    divPorfolio.classList.remove('btn-ocultar');
+})
+ 
+botonMenos2.addEventListener('click', () =>{
+    masPorfolio.classList.remove('mostrarPorfolio');
+    divPorfolio.classList.remove('btn-ocultar');
 })

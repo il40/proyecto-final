@@ -46,6 +46,7 @@
   h3{
     font-size: 20px;
   }
+  
 
   /* MENU  */
   .navegador{
@@ -87,10 +88,12 @@
   .menu-nav-item{
     margin: 10px;
     padding: 10px;
+    align-self: center;
   }
   .menu-nav-item1{
     display: none;
   }
+  
   .menu-toggle,
   .menu-close{
     display: none;
@@ -157,7 +160,10 @@
     .menu-nav-item{
       margin:  0 ;
     }
-    .show{
+    .item-contacto{
+      margin-bottom: 24px;
+    }
+    .verMenu{
       right: 0;
     }
   }
@@ -231,6 +237,33 @@
   .porfolio{
     padding-top: 35px;
   }
+  .btn-ocultar{
+    display: none;
+  }
+  .porfolio2{
+    display: none;
+  }
+  .mostrarPorfolio{
+    display: block;
+  }
+  .btn-porfolio{
+    border-radius: 15px;
+    padding: 20px 28px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: #EA5554;
+  }
+  .btn-porfolio a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #EA5554;
+  }
+  .btn-porfolio a h4{
+    margin-bottom: 0;
+  }
 
   /* CONTACTO  */
   .contacto{
@@ -263,7 +296,7 @@
     color: #fff;
     font-size: 22PX;
   }  
-  I:hover{
+  a i:hover{
     color: rgb(171, 171, 171);
   }
 
@@ -330,6 +363,11 @@
       font-size: 16px;
     }
   }
+
+
+
+
+  
 
 
 
